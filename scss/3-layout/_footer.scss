@@ -1,0 +1,21 @@
+@use '../5-utils/variables' as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $alabaster;
+    height: 20vh;
+
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+    &__copy {
+        margin-left: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+@use '../5-utils/mixins' as *;
+
+.brand {
+  &--md {
+    margin: 10px 0;
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--sm {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+}

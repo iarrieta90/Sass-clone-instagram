@@ -1,0 +1,58 @@
+@use '../5-utils/variables' as *;
+@use '../5-utils/mixins' as *;
+
+.main__login {
+  height: 80vh;
+}
+
+.login {
+  @include flex-row-center;
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.login__container {
+  width: 37vw;
+  height: 618px;
+}
+
+.login__bg-img {
+  background-image: url("../img/phone-frame.png");
+  background-repeat: no-repeat;
+  align-self: center;
+  position: relative;
+}
+
+.login__screen-img {
+  position: absolute;
+  top: 99px;
+  left: 151px;
+  width: 240px;
+}
+
+.login__hr {
+  margin: 15px 40px;
+  @include flex-row-center;
+  div {
+    background-color: $alto-gray;
+    height: 1px;
+    flex-grow: 1;
+  }
+  p {
+    margin: 0 18px;
+    color: rgb(142, 142, 142);
+  }
+}
+
+.login__fb {
+  margin: 0 40px;
+}
+
+.login__download {
+  @include flex-col-center;
+  text-align: center;
+  max-width: 350px;
+}
+
+
+

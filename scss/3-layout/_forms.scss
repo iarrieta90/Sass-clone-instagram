@@ -1,0 +1,19 @@
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+.form__input {
+    margin-bottom: 6px;
+    padding: 9px 7px;
+    height: 18px;
+    font-size: 12px;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 3px;
+
+    &.btn {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+}

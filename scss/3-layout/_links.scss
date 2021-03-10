@@ -1,0 +1,32 @@
+@use '../5-utils/variables' as *;
+
+.link {
+    text-decoration: none;
+}
+
+.links__group {
+    display: flex;
+    justify-content: center;
+
+    .link {
+        margin: 0 8px 10px;
+    }
+}
+
+.link__img {
+    height: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.link--dark {
+    color: $midnight-blue;
+}
+
+.link--bright {
+    color: $blue-ribbon;
+}
+
+.link--primary {
+    color: $gray;
+}

@@ -1,0 +1,20 @@
+@use '../5-utils/variables' as *;
+@use '../5-utils/mixins' as *;
+
+.header {
+    @include flex-row-space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid $alto-gray;;
+
+    .icons {
+        @include flex-row-center;
+    }
+
+    .icon {
+        width: 23px;
+        height: 23px;
+    }
+    .icon:not(:first-child) {
+        margin-left: 22px;
+    }
+}

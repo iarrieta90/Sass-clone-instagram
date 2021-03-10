@@ -1,0 +1,33 @@
+@use '../5-utils/variables' as *;
+@use '../5-utils/mixins' as *;
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    @include flex-row-center;
+}
+
+.btn--blue {
+    background-color: $blue-ribbon;
+    color: white;
+}
+
+.btn--fb {
+    background-color: transparent;
+    color: $chambray-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__logo {
+    height: 16px;
+    margin-right: 8px;
+    margin-top: -2px;
+}

@@ -1,0 +1,19 @@
+@use '../5-utils/variables' as *;
+@use '../5-utils/mixins' as *;
+
+.box {
+  @include flex-col-center;
+  border: 1px solid $alto-gray;
+  margin: 10px 0;
+  padding: 20px 0;
+  background-color: white;
+}
+
+.box--login {
+  max-width: 350px;
+}
+
+.box__item {
+  text-align: center;
+  margin: 0 auto;
+}
